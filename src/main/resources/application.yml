@@ -1,0 +1,45 @@
+server:
+  port: 8088
+  ssl:
+    key-store: classpath:sample.jks
+    key-store-password: secret
+    key-password: password
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+      
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@${DB_PORT_1521_TCP_ADDR:192.168.2.190}:${DB_PORT_1521_TCP_PORT:1522}/xe
+    username: stages_order
+    password: stages_order1688
+    initial-size: 1
+    min-idle: 3
+    max-active: 20
+    max-wait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 30000
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    platform: oracle
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate :
+        format_sql: true    
+logging:
+  level:
+    com.sj.stages: debug
+    org.apache.http: debug
+
+    
+  
