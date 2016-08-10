@@ -1,6 +1,8 @@
 # sunxyz-tool
 **一些常用的工具类库**
 
+**poi excel-tool**
+
 这是一个简单的poi excel 导入导出工具库 他可以帮你完成导入导出级联关系的操作
 
 首先需要导入pom.xml 依赖
@@ -18,6 +20,8 @@
 		<version>3.9</version>
 	</dependency> 
 ```
+然后引入 cn.sunxyz.common.excel下的包
+
 在实体类上标注相关注解 test中已经给出一个简单的例子
 
 导入示例 
