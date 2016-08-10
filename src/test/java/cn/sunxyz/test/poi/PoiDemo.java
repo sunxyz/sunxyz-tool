@@ -63,7 +63,8 @@ public class PoiDemo {
     /*  
      * 读取一个已存在的Excel  
      */ 
-    @Test 
+    @SuppressWarnings("unused")
+	@Test 
     public void testReadExcel() throws InvalidFormatException, IOException {  
  
         // 获取第一个工作目录,下标从0开始  
@@ -149,7 +150,8 @@ public class PoiDemo {
      * 通过使用模板生成Excel文件,模板当中包含样式,   
      * 这样我们只为模板填充数据就可以有相应的样式  
      */ 
-    @Test 
+    @SuppressWarnings("unused")
+	@Test 
     public void testWriteExcelByTemplate() throws InvalidFormatException,  
             IOException {  
         String fileName = "test.xlsx";  
