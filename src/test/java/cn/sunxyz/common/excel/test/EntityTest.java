@@ -25,6 +25,7 @@ public class EntityTest {
 
 	private Logger logger = Logger.getLogger(EntityTest.class);
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void test(){
 		
@@ -94,6 +95,7 @@ public class EntityTest {
 		new ExcelUtil<School>(School.class).exportExcel(list, "学校信息", output);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void importExcel(){
 		FileInputStream fis = null;  
