@@ -24,7 +24,7 @@
 
 在实体类上标注相关注解 test中已经给出一个简单的例子
 
-导入示例 
+导出示例 
 
 ```
 List<School> list = new ArrayList<>();
@@ -38,7 +38,7 @@ IExcelUtil<School> eu = new ExcelUtils<>();
 eu.build(School.class).exportExcel(list, "学校信息", output);
 ```
 
-导出示例
+导入示例
 
 ```
 FileInputStream fis = null;  
