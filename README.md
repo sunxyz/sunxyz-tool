@@ -24,6 +24,8 @@
 
 在实体类上标注相关注解 test中已经给出一个简单的例子
 
+[使用介绍：](http://blog.csdn.net/zhugeyangyang1994/article/details/52184742)
+
 导出示例 
 
 ```
